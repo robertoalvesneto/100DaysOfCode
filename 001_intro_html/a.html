@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        
+        <title>Titulo de pag</title>
+        
+        <link href="a.css" rel="stylesheet">
+
+        <!--social sharing: infos carregadas para gerar o link personalizado
+        que aparece quando compartilhamos um link. to deixando isso aqui para
+        achar facilmente no futuro-->
+        <meta property="og:url" content="http://www.b7web.com.br.metashare/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Título do bagui"/>
+        <meta property="og:description" content="Descrição do bagui"/>
+        <meta property="og:image" content="http://www.b7web.com.br.metashare/img.jpg"/>
+
+    </head>
+    <body>
+        <header>
+            <h1>Aprendendo HTML5</h1>
+        </header>
+
+        <nav>
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+            <a href="">link 4</a>
+        </nav>
+
+        <article>
+            <!--PART 1-->
+            <h3>Texto</h3>
+            <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, <strong>quis nostrud exercitation</strong> 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est 
+                laborum.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est 
+                laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                proident, sunt in culpa qui officia deserunt mollit anim id est 
+                laborum.</p>
+        </article>        
+        
+        <aside>
+            <!--PART 2-->
+            <h3>Listas</h3>
+            <ul style="list-style-type: square">
+                <li>estojo</li>
+                <ul>
+                    <li>Lapis</li>
+                    <li>caneta</li>
+                    <li>borracha</li>
+                    <li>régua</li>
+                    <li>apontador</li>
+                    <li>marcador</li>
+                </ul>
+            </ul>
+            <br>
+
+            <ol type="i">
+                <li>café da manhã</li>
+                <li>almoço</li>
+                <li>lanche</li>
+                <li>jantar</li>
+            </ol>
+
+            <!--PART 3-->
+            <h3>Tabela</h3>
+            <table width="300" border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Descricão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>café</td>
+                        <td>desc do café ...</td>
+                    </tr>
+                    <tr>
+                        <td>misto</td>
+                        <td>desc do misto ...</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--PART 4-->
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="midia/horse.ogv" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <!--PART 5-->
+            <h3>Vídeo</h3>
+            <video width="320" height="240" controls>
+                <source src="midia/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </aside>
+
+        <!--PART 5-->
+        <h3>Formulário</h3>
+        <form action="login.html" method="GET">
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" name="nome" id="nome" placeholder="João Carlos" autocomplete="off" required><br><br>
+            
+            <label for="senha">Senha:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="12345678" maxlength="8" required><br><br>
+
+            <label for="descricao">Descrição</label><br>
+            <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea><br><br>
+
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="masculino">masculino</label>
+
+            <input type="radio" name="sexo" id="feminino" value="feminino">
+            <label for="feminino">feminino</label>
+            
+            <input type="radio" name="sexo" id="naoinformar" value="naoinformar">
+            <label for="naoinformar">não informar</label><br><br>
+
+            <select name="opcoes" id="opcoes">
+                <option>Selecione</option>
+                <option value="opt1">Opção 1</option>
+                <option value="opt2">Opção 2</option>
+                <option value="opt3">Opção 3</option>
+            </select><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <footer>
+            Rodapé da pag
+        </footer>
+    </body>
+</html>
