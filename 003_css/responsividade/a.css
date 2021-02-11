@@ -1,0 +1,164 @@
+body {
+    font-size: 25px;
+    padding: 20px;
+    margin: auto;
+}
+
+header, nav {
+    background-color: rgb(230, 230, 250);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 0.5px solid black;
+}
+
+#conteudo {
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+}
+
+article {
+    width: 70%;
+    max-width: 980px;
+    height: auto;
+    float: left;
+    margin: auto;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+aside {
+    width: 25%;
+    max-width: 350px;
+    height: auto;
+    float: left;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1400px;
+    height: 100px;
+    margin: auto;
+    background-color: lavenderblush;
+    border: 0.5px solid black;
+    text-align: center;
+    clear: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+.link {
+    color: teal;
+}
+
+p {
+    text-align: start;
+}
+
+#paragrafo1 {
+    text-align: center;
+}
+
+#paragrafo3 {
+    text-align: justify;
+}
+
+
+/*--TABELA*/
+table {
+    max-width: 500px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+thead {
+    background-color: #706b6b57;
+}
+/*
+tbody {
+    background-color: #e6e6e657;
+}
+*/
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #EEE;
+}
+
+td:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+
+/*fazendo divs arredondadas no ini e no final*/
+#centralizar {
+    background-color: blueviolet;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#balaoDialogo {
+    background-color: aquamarine;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 70px;
+    text-align: center;
+    font-size: 15px;
+}
+#balaoDialogo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 13px solid;
+    border-color: aquamarine transparent transparent transparent;
+}
+/*--FIM SELETORES--*/
+
+/*comportamento para telas especificas*/
+@media only screen and (min-width:600px) and (max-width:1440px) {
+    article, aside {
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    aside {
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width:600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    article, aside {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    aside {
+        margin-top: 0px;
+    }
+    table {
+        font-size: 16px;
+    }
+}
