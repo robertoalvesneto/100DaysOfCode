@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo,
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    padding: 15px;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+
+/*BANNER*/
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    width: 300px;
+}
+
+.text1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 1px 0px black;
+}
+
+.text2 {
+    color: white;
+    font-size: 18px;
+}
+
+/*BANNER -- DESCRIPTION*/
+.banner-box {
+    display: flex;
+    background-color: antiquewhite;
+    height: 230px;
+}
+
+.banner-description1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(7, 151, 177);
+    padding: 20px;
+}
+.banner-description2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(54, 130, 216);
+    padding: 20px;
+}
+.banner-description3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(11, 35, 170);
+    padding: 20px;
+}
+
+.title {
+    flex: 1;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.text {
+    flex: 1;
+    color: white;
+}
+
+.button-readme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15;
+}
+
+.button-readme a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.button-readme a:hover {
+    color: blue;
+    border: 1.5px solid blue;
+    text-decoration: none;
+}
+
+.table {
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
