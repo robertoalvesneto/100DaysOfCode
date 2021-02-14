@@ -69,26 +69,30 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 180px;
-    width: 300px;
+    max-width: 350px;
 }
 
-.text1 {
+.header-title h1 {
     color: white;
-    font-size: 50px;
-    text-shadow: 0px 1px 0px black;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
 }
 
-.text2 {
+.header-title h2 {
     color: white;
-    font-size: 18px;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
 }
 
 /*BANNER -- DESCRIPTION*/
 .banner-box {
     display: flex;
-    background-color: antiquewhite;
-    height: 230px;
+    height: 210px;
 }
 
 .banner-description1 {
@@ -96,7 +100,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(7, 151, 177);
+    background-color: #39aae1;
     padding: 20px;
 }
 .banner-description2 {
@@ -104,7 +108,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(54, 130, 216);
+    background-color: #0079c7;
     padding: 20px;
 }
 .banner-description3 {
@@ -112,20 +116,20 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(11, 35, 170);
+    background-color: #2b4c99;
     padding: 20px;
 }
 
-.title {
+.banner-title {
     flex: 1;
     color: white;
     font-size: 22px;
-    margin-bottom: 15px;
 }
 
-.text {
+.banner-text {
     flex: 1;
     color: white;
+    margin: 20px 0px;
 }
 
 .button-readme {
@@ -163,11 +167,156 @@ th, td {
 }
 
 
+/*------BODY-AREA------*/
+.body-area {
+    display: flex;
+    justify-content: center;
+}
+
+.body-area .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-area .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.body-area .wrap{
+    flex-wrap: wrap;
+}
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+}
+
+.content-title-text {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.content-title-line-bar {
+    width: 70px;
+    height: 3px;
+    background-color: #39aae1;
+}
+
+/*----CONTENT----*/
+.content {
+    flex: 2;
+    padding-right: 30px;
+}
+
+/*--card--*/
+.card { flex: 1; }
+
+.card a{
+    text-decoration: none;
+}
+
+.card article {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 350px;
+    margin-bottom: 30px;
+}
+
+.card .news_data {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.card .news_data .date {
+    background-color:  #2b4c99;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.card .news_data .date::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    border: 13px solid;
+    border-color: #2b4c99 transparent transparent transparent;
+}
+
+.card .news_data .comments {
+    background-color:  #39aae1;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.card .thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+.card .title {
+    color: black;
+    font-size: 22px;
+    margin: 15px 0px;
+}
+
+.card .text {
+    color: black;
+    font-size: 15px;
+}
 
 
 
+/*----ASIDE----*/
+aside {
+    flex: 1;
+}
 
+/*--aside widgets--*/
+.widget {
+    flex: 1;
+    background-color: #39aae1;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
 
+/*--aside contact--*/
+.contact-description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
 
+.contact .line {
+    background-color: #555555;
+    height: 1px;
+    margin: 10px 0px;
+}
 
+.contact-icon {
+    background-color: #c4c4c4;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+}
 
+.contact-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contact-text a {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: blue;
+}
