@@ -4,6 +4,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.color1 { background-color: #39aae1; }
+.color2 { background-color: #0079c7; }
+.color3 { background-color: #2b4c99; }
+
+.content-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+}
+
+.content-title-text {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.content-title-text-white {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.content-title-line-bar {
+    width: 70px;
+    height: 3px;
+    background-color: #39aae1;
+}
+
+
+/*------HEADER------*/
 header {
     display: flex;
     justify-content: center;
@@ -95,28 +125,11 @@ nav a:hover {
     height: 210px;
 }
 
-.banner-description1 {
+.banner-description {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #39aae1;
-    padding: 20px;
-}
-.banner-description2 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #0079c7;
-    padding: 20px;
-}
-.banner-description3 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #2b4c99;
     padding: 20px;
 }
 
@@ -186,25 +199,6 @@ th, td {
 
 .body-area .wrap{
     flex-wrap: wrap;
-}
-
-.content-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80px;
-}
-
-.content-title-text {
-    color: black;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.content-title-line-bar {
-    width: 70px;
-    height: 3px;
-    background-color: #39aae1;
 }
 
 /*----CONTENT----*/
@@ -319,4 +313,145 @@ aside {
     margin-left: 3px;
     margin-right: 3px;
     color: blue;
+}
+
+
+/*----FOOTER----*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+}
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    width: 100%;
+}
+
+/*--FOOTER-PAGES--*/
+.footer-pages {
+    display: flex;
+    background-color: #39aae1;
+}
+
+.footer-pages .page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-pages .page .text {
+    color: white;
+    font-size: 16px;
+    text-shadow: 0px 1px 0px #555555;
+    margin-bottom: 10px;
+}
+.footer-pages .page .title { font-size: 25px; }
+
+.footer-pages .page .description { font-size: 15px; }
+
+.footer-pages .page .description:after {
+    content: "\2192";
+    font-size: 20px;
+}
+
+
+/*--FOOTER-INFOS--*/
+.footer-infos {
+    display: flex;
+}
+.footer-infos a {
+    width: auto;
+}
+.footer-infos .medicenter-clinic {
+    flex: 1;
+}
+.footer-infos .medicenter-clinic {
+    margin-right: 15px;
+    font-size: 14px;
+
+    color: #676466;
+}
+
+.medicenter-clinic .table-contacts {
+    margin: 20px 0px;
+}
+.medicenter-clinic table {
+    margin: 0;
+}
+.medicenter-clinic table tr, th, td {
+    color: #676466;
+    font-size: 14px;
+    text-align: start;
+}
+.medicenter-clinic a {
+    color: white;
+}
+
+.links-icons {
+    display: flex;
+    justify-content: start;
+}
+.links-icons .contact-icon {
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 8px;
+    background-color: rgb(36, 36, 36);
+}
+
+.links-icons .contact-icon .material-icons, .fa {
+    font-size: 17px;
+    color:#676466;
+}
+
+
+/*latest-posts*/
+.footer-infos .latest-posts { flex: 1; }
+.footer-infos .latest-posts .post {
+    margin-bottom: 20px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+.latest-posts .icon-arrow:after {
+    content: "\2192";
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+}
+.latest-posts .description { color: white; }
+.latest-posts .date {
+    color: #39aae1;
+    margin-top: 5px;
+}
+
+
+/*latest-tweets*/
+.footer-infos .latest-tweets { flex: 1; }
+.footer-infos .latest-tweets .tweet {
+    margin-bottom: 20px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+.latest-tweets .icon-arrow:after {
+    content: "\2192";
+    font-size: 20px;
+    color: #676466;
+    margin-right: 5px;
+}
+.latest-tweets .tweet-description { color: #676466; }
+.latest-tweets .tweet-link { color: white; }
+.latest-tweets .tweet-date {
+    color: #39aae1;
+    margin-top: 5px;
 }
