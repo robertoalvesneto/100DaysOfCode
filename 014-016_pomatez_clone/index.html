@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Pomatez</title>
+</head>
+<body>
+    <div class="row container_screen">
+        <div class="column container">
+            <div class="row header">
+                <div onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="itens">
+                    <div class="column task_list">
+                        <div class="icon"><i class="fa fa-edit"></i></div>
+                        <div class="txt">Task List</div>
+                    </div>
+                </div>
+                <div onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="itens">
+                    <div class="column config">
+                        <i class="material-icons icon">access_time</i>
+                        <div class="txt">Config</div>
+                    </div>
+                </div>
+                <div class="itens active">
+                    <div class="column timer">
+                        <i class="material-icons icon">av_timer</i>
+                        <div class="txt">Timer</div>
+                    </div>
+                </div>
+                <div onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="itens">
+                    <div class="column settings">
+                        <i class="material-icons icon">settings</i>
+                        <div class="txt">Settings</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column body">
+                <div class="timer-area">
+                    <div class="loader">
+                        <div class="column loader-bg">
+                            <i class='material-icons current-activity-icon'>import_contacts</i>
+                            <div class="time-text current-state-c"></div>
+                            <div class="text">Stay Focused</div>
+                        </div>        
+                        <div class="spiner-holder-one animate-0-25-a">
+                            <div class="spiner-holder-two animate-0-25-b">
+                                <div class="loader-spiner" style=""></div>
+                            </div>
+                        </div>
+                        <div class="spiner-holder-one animate-25-50-a">
+                            <div class="spiner-holder-two animate-25-50-b">
+                                <div class="loader-spiner"></div>
+                            </div>
+                        </div>
+                        <div class="spiner-holder-one animate-50-75-a">
+                            <div class="spiner-holder-two animate-50-75-b">
+                                <div class="loader-spiner"></div>
+                            </div>
+                        </div>
+                        <div class="spiner-holder-one animate-75-100-a">
+                            <div class="spiner-holder-two animate-75-100-b">
+                                <div class="loader-spiner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column text-task-list">
+                    <div class="row header-list">
+                        <div class="title">No priority list has been created yet.</div>
+                        <i class="material-icons">more_vert</i>
+                    </div>
+                    <div class="text">Create a priority list and add task items on it.</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="column sessions">
+                    <div class="current-sessions"></div>
+                    <div class="text">Sessions</div>
+                </div>
+                <div class="row controller">
+                    <div class="aux-invisible"></div>
+                    <div class="reset">
+                        <i onclick="buttonReset()" onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="material-icons">refresh</i>
+                    </div>
+                    <div class="button-play">
+                        <i onclick="buttonPlayer()" onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="material-icons">play_circle_outline</i>
+                    </div>
+                    <div class="next">
+                        <i onclick="buttonNext()" onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="material-icons">skip_next</i>
+                    </div>
+                </div>
+                <div class="volume">
+                    <i onclick="buttonSound()" onmouseover="hover(this, true)" onmouseout="hover(this, false)" class="material-icons">volume_up</i>
+                    <!--<i class="material-icons">volume_off</i>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loader.js"></script>
+</body>
+</html>
