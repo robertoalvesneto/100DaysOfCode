@@ -1,0 +1,21 @@
+body {
+  font-size: 25px;
+}
+
+header {
+  background-color: lavender;
+}
+
+nav {
+  background-color: lavender;
+}
+
+footer {
+  height: 100px;
+  margin-top: 30px;
+  background-color: lavenderblush;
+}
+
+form {
+  font-size: 18px;
+}

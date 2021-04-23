@@ -1,0 +1,176 @@
+body {
+  font-size: 25px;
+}
+
+header,
+nav {
+  background-color: rgb(230, 230, 250);
+  margin-bottom: 10px;
+  text-align: center;
+  border: 0.5px solid black;
+}
+
+.link {
+  color: teal;
+}
+
+p {
+  text-align: start;
+}
+
+#paragrafo1 {
+  text-align: center;
+}
+
+#paragrafo3 {
+  text-align: justify;
+}
+
+/*--TABELA*/
+table {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+thead {
+  background-color: #706b6b57;
+}
+/*
+tbody {
+    background-color: #e6e6e657;
+}
+*/
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #eee;
+}
+
+td:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+/*--FORMULARIO--*/
+form {
+  background-color: antiquewhite;
+  margin: 0 auto;
+  padding: 10px;
+  width: 260px;
+  height: 380px;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+input#nome,
+input#senha,
+input#descricao,
+select {
+  width: 250px;
+}
+
+select {
+  display: block;
+  margin: 10px 0px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*--SELETORES--*/
+a[href^="https:"] {
+  /*seleciona links que comecem exatamente com 'https:' */
+  background-color: aliceblue;
+}
+a[href^="http:"] {
+  /*seleciona links que comecem exatamente com 'http:' */
+  background-color: aliceblue;
+}
+a[href*="futebol"] {
+  /*seleciona links que contenham, em algum lugar, a palavra 'futebol'*/
+  background-color: aliceblue;
+}
+a[href$="php"] {
+  /*seleciona links que terminem exatamente com 'php' */
+  background-color: aliceblue;
+}
+
+p::first-letter {
+  /*dois pontos indica o conteudo do elemento*/
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*fazendo divs arredondadas no ini e no final*/
+#centralizar {
+  background-color: blueviolet;
+  padding: 30px;
+  border-radius: 10px;
+}
+.arredondar {
+  background-color: aquamarine;
+  width: 50px;
+  height: 40px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px coral;
+  text-align: center;
+}
+.arredondar:first-child {
+  border-radius: 15px 15px 0px 0px;
+}
+.arredondar:last-child {
+  border-radius: 0px 0px 15px 15px;
+}
+
+#balaoDialogo {
+  background-color: aquamarine;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 70px;
+  text-align: center;
+  font-size: 15px;
+}
+#balaoDialogo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  border: 13px solid;
+  border-color: aquamarine transparent transparent transparent;
+}
+
+p:first-child {
+  /*Isso já é feito la em cima, mas la usando uma classeno html, aqui com seletor*/
+  text-align: center;
+}
+p:first-child:before,
+p:first-child:after {
+  /*adicionando um conteudo ao inicio e ao final*/
+  content: "''";
+}
+/*--FIM SELETORES--*/
+footer {
+  height: 100px;
+  margin-top: 30px;
+  background-color: lavenderblush;
+  border: 0.5px solid black;
+  text-align: center;
+}
