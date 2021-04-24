@@ -1,0 +1,73 @@
+/*
+
+  #UNIDADES DE MEDIDA ABSOLUTAS
+  px - pixels
+  pt - points (usado mais para fontes)
+  in - polegada
+  cm - centímetros
+  mn - milímetro
+  : inherit - força a herança do elemento pai
+
+
+  #UNIDADES DE MEDIDA RELATIVAS
+
+  ## PARA FONTES
+  em -baseia-se no tamanho do font-size do item pai imediato.
+      ex:
+        .box {
+          font-size: 10px;
+        }
+        .box-filho {
+          font-size: 3em; // 1em == 10px; 3em == 30px;
+        }
+        .box-filho-filho {
+          width: 10em; // 1em == 30px; 10em == 300px
+        }
+
+  rem -baseia-se no tamanho do font-size do pai raiz.
+      ex:
+        html {
+          font-size: 10px;
+        }
+        .box {
+          font-size: 2em; // 20px
+        }
+        .box-filho {
+          font-size: 3em; // 30px;
+        }
+        .box-filho-filho {
+          width: 10em; // 100px
+        }
+
+  ex -vou fingir que n existe.
+  ch -vou fingir que n existe.
+  (ambas se baseiam no tam da fonte, isso é estranho e para de funcionar se o
+  usuário definir a própria fonte.)
+
+
+  ## VIEWPORT
+  vh, vw -unidade relativa ao tamanho da altura e largura, respectivamente, da
+          tela visível do usuário. Se o usuário diminuir o tam do navegador ela
+          também diminui.
+      ex:
+        .box {
+          height: 100vh; // Toda a altura visível para o usuário
+          width: 100vw; // Toda a largura visível para o usuário
+        }
+  
+  vmin -se a altura da tela for menor que a largura, equivale ao vw, se não,
+        equivale ao vh.
+  vmax -inverso da vmin.
+
+  %  -usa uma porcentagem do espaço disponível para ela.
+      ex:
+        .box {
+          width: 1000px;
+        }
+        .box-filho {
+          width: 30%; // 300px
+        }
+        .box-filho-filho {
+          width: 50%; // 150px
+        }
+*/
