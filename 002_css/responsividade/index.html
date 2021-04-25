@@ -1,121 +1,159 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <!--Width depende do tamanho da tela do aparelho-->
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, user-scalable=no"
+    />
+    <title>Titulo de pag</title>
 
-  <!--Width depende do tamanho da tela do aparelho-->
-  <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
-  <title>Titulo de pag</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
 
-  <link href="index.html" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <h1>Aprendendo HTML5</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Aprendendo HTML5</h1>
-  </header>
+    <nav>
+      <a href="" class="link">link 1</a>
+      <a href="" class="link">link 2</a>
+      <a href="" class="link">link 3</a>
+      <a href="" class="link">link 4</a>
+    </nav>
 
-  <nav>
-    <a href="" class="link">link 1</a>
-    <a href="" class="link">link 2</a>
-    <a href="" class="link">link 3</a>
-    <a href="" class="link">link 4</a>
-  </nav>
+    <div id="banner">
+      <!--Imagem responsiva (por favor nintendo n me processa)-->
+      <!--A imagem é trocada em tamanhos específicos, e enquanto isso vai se ajustando-->
+      <picture>
+        <source media="(min-width: 800px)" srcset="images/pokemon-1600w.jpg" />
+        <source
+          media="(min-width: 500px) and (max-width: 800px)"
+          srcset="images/pokemon-800w.jpg"
+        />
+        <source
+          media="(min-width: 300px) and (max-width: 500px)"
+          srcset="images/pokemon-celular-600w.jpg"
+        />
+        <source
+          media="(max-width: 300px)"
+          srcset="images/pokemon-celular-300w.jpg"
+        />
+        <img src="images/pokemon-celular-300w.jpg" alt="pokemon sword" />
+      </picture>
+    </div>
 
-  <div id="conteudo">
-    <article>
-      <h3>Coluna da esquerda</h3>
-      <p id="paragrafo1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam</p>
+    <div id="conteudo">
+      <article>
+        <h3>Coluna da esquerda</h3>
+        <p id="paragrafo1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam
+        </p>
 
-      <div id="centralizar">
+        <div id="centralizar">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+
+        <div id="balaoDialogo">Sou um balão feito com div</div>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt.</p>
-      </div>
+          Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, <strong>quis nostrud exercitation</strong> ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-      <div id="balaoDialogo">Sou um balão feito com div</div>
+        <!--video responsivo-->
+        <div class="video">
+          <div class="video-area">
+            <iframe
+              src="https://www.youtube.com/embed/pKO9UjSeLew"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
 
-      <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, <strong>quis nostrud exercitation</strong>
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+        <p id="paragrafo3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </article>
 
-      <p id="paragrafo3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-    </article>
+      <aside>
+        <h3>Coluna da direita</h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Descricão</th>
+              <th>Ingredientes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>café</td>
+              <td>desc do café ...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>misto</td>
+              <td>desc do misto ...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>pão com ovo</td>
+              <td>desc do pão com ovo ...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </aside>
+    </div>
 
-    <aside>
-      <h3>Coluna da direita</h3>
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Descricão</th>
-            <th>Ingredientes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>café</td>
-            <td>desc do café ...</td>
-            <td>...</td>
-          </tr>
-          <tr>
-            <td>misto</td>
-            <td>desc do misto ...</td>
-            <td>...</td>
-          </tr>
-          <tr>
-            <td>pão com ovo</td>
-            <td>desc do pão com ovo ...</td>
-            <td>...</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-    </aside>
-  </div>
-
-  <footer>
-    Rodapé da pag
-  </footer>
-</body>
-
+    <footer>Rodapé da pag</footer>
+  </body>
 </html>
+git

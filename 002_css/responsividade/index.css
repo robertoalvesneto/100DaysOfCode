@@ -1,3 +1,9 @@
+:root {
+  --max-width: 1600px;
+  --preto: black;
+  --cinza: #706b6b57;
+}
+
 body {
   font-size: 25px;
   padding: 20px;
@@ -8,23 +14,32 @@ header,
 nav {
   background-color: rgb(230, 230, 250);
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--max-width);
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--preto);
 }
 
 #conteudo {
   margin: auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--max-width);
   height: auto;
+}
+
+#banner {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 article {
   width: 70%;
-  max-width: 980px;
+  max-width: 1130px;
   height: auto;
   float: left;
   margin: auto;
@@ -34,21 +49,20 @@ article {
 
 aside {
   width: 25%;
-  max-width: 350px;
+  max-width: 400px;
   height: auto;
   float: left;
   margin: auto;
-  margin-top: 100px;
   margin-bottom: 30px;
 }
 
 footer {
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--max-width);
   height: 100px;
   margin: auto;
   background-color: lavenderblush;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--preto);
   text-align: center;
   clear: left;
 }
@@ -73,6 +87,27 @@ p {
   text-align: justify;
 }
 
+/*--Video*/
+.video {
+  width: 100%;
+}
+
+.video-area {
+  position: relative;
+  height: 0px;
+  padding: 0px 0px 56.25%;
+}
+
+.video-area iframe {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*--TABELA*/
 table {
   max-width: 500px;
@@ -84,7 +119,7 @@ table {
 }
 
 thead {
-  background-color: #706b6b57;
+  background-color: var(--cinza);
 }
 /*
 tbody {
@@ -134,7 +169,17 @@ td:hover {
 /*--FIM SELETORES--*/
 
 /*comportamento para telas especificas*/
-@media only screen and (min-width: 600px) and (max-width: 1440px) {
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  article {
+    width: 65%;
+  }
+
+  aside {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   article,
   aside {
     width: 100%;
