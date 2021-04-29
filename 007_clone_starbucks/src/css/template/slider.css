@@ -1,0 +1,58 @@
+.slider-content {
+  max-width: 1440px;
+  display: inline-block;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.button-left,
+.button-right,
+.badge {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.button-left {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 20px;
+  font-size: 20px;
+  background-color: white;
+  padding: 0 8px 0 8px;
+  border-radius: 100%;
+}
+
+.button-right {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 20px;
+  font-size: 20px;
+  background-color: white;
+  padding: 0 8px 0 8px;
+  border-radius: 100%;
+}
+
+.badge {
+  position: absolute;
+  background-color: var(--preto-cinza);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  bottom: 20px;
+  left: calc(50% - 37px);
+}
+
+.badge2 {
+  margin-left: 30px;
+}
+
+.badge3 {
+  margin-left: 60px;
+}
+
+.badge-white {
+  background-color: var(--cinza);
+}

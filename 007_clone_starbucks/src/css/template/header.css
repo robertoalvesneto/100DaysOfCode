@@ -1,0 +1,110 @@
+/*  # header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0 1px 10px -8px black;
+}
+
+/*  ## header-left  */
+.header-left {
+  display: flex;
+  margin-left: 2.3vw;
+}
+
+.starbucks-logo {
+  width: 51px;
+}
+
+.header-left__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  margin-left: 1.2vw;
+}
+
+.header-left__nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
+
+.header-left__nav a:hover {
+  color: var(--green-text);
+}
+
+/*  ## header-right  */
+.header-right {
+  display: flex;
+  margin-right: 2.3vw;
+}
+
+.historias-logo {
+  width: 120px;
+}
+
+.header-right__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  width: 500px;
+  margin-left: 1.2vw;
+}
+
+.header-right__menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header-right__menu .material-icons {
+  margin-right: 10px;
+}
+
+.header-right__menu .align-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-right__menu .tam-button-login {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right__menu .button-login {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+  border-radius: 30px;
+  transition: font-size 0.25s;
+}
+
+.header-right__menu .button-login:hover {
+  font-size: 0.8em;
+  background-color: var(--cinza);
+}
+
+.header-right__menu .tam-create-account {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right__menu .button-create-account {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 30px;
+  transition: font-size 0.25s;
+  color: white;
+}
+
+.header-right__menu .button-create-account:hover {
+  font-size: 0.8em;
+}
