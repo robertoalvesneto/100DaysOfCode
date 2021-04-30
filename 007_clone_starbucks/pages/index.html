@@ -37,27 +37,66 @@
         </nav>
       </div>
       <div class="header-right">
-        <a href="#">
-          <img
-            src="../src/images/sb-historias-logo.svg"
-            class="historias-logo"
-            alt="starbucks historia na america latina"
-          />
-        </a>
-        <div class="header-right__menu">
-          <a href="#" class="align-center">
-            <i class="material-icons">location_on</i>
-            Encontre uma loja
+        <div onclick="showMenu()" class="menu-mobile" id="btnNav">
+          <i class="material-icons">menu</i>
+        </div>
+        <div class="header-right__content">
+          <a href="#">
+            <img
+              src="../src/images/sb-historias-logo.svg"
+              class="historias-logo"
+              alt="starbucks historia na america latina"
+            />
           </a>
+          <div class="header-right__menu">
+            <a href="#" class="align-center">
+              <i class="material-icons">location_on</i>
+              Encontre uma loja
+            </a>
+            <div class="tam-button-login">
+              <a href="#" class="button-login">Entrar</a>
+            </div>
+            <div class="tam-create-account">
+              <a href="#" class="button-create-account">Participe agora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <div class="mobile-nav__content">
+        <div class="mobile-nav__links">
+          <a href="#">MENU</a>
+          <a href="#">REWARS</a>
+          <a href="#">NOSSO CAFÉ</a>
+          <a href="#">IMPACTO SOCIAL</a>
+        </div>
+        <div class="divider"></div>
+        <div class="tam-historias-logo">
+          <a href="#">
+            <img
+              src="../src/images/sb-historias-logo.svg"
+              class="historias-logo"
+              alt="starbucks historia na america latina"
+            />
+          </a>
+        </div>
+        <div class="header-right__menu">
           <div class="tam-button-login">
             <a href="#" class="button-login">Entrar</a>
           </div>
           <div class="tam-create-account">
             <a href="#" class="button-create-account">Participe agora</a>
           </div>
+          <a href="#" class="align-center">
+            <i class="material-icons">location_on</i>
+            Encontre uma loja
+          </a>
         </div>
       </div>
-    </header>
+      <div onclick="hiddeMenu()" class="nav__overlay"></div>
+    </nav>
 
     <main>
       <div class="column">
@@ -185,7 +224,11 @@
       <div class="footer-container">
         <div class="footer-container__links">
           <div class="sobre-nos">
-            <h3>Sobre nós</h3>
+            <div class="links--title" onclick="handleFooterMenu('sobre-nos')">
+              <h3>Sobre nós</h3>
+              <i class="material-icons icon--expand-more">expand_more</i>
+              <i class="material-icons icon--expand-less">expand_less</i>
+            </div>
             <ul>
               <li><a href="#">Nossa empresa</a></li>
               <li><a href="#">Nosso café</a></li>
@@ -193,13 +236,24 @@
             </ul>
           </div>
           <div class="carreira">
-            <h3>Carreira</h3>
+            <div class="links--title" onclick="handleFooterMenu('carreira')">
+              <h3>Carreira</h3>
+              <i class="material-icons icon--expand-more">expand_more</i>
+              <i class="material-icons icon--expand-less">expand_less</i>
+            </div>
             <ul>
               <li><a href="#">Central de carreiras</a></li>
             </ul>
           </div>
           <div class="impacto-social">
-            <h3>Impacto Social</h3>
+            <div
+              class="links--title"
+              onclick="handleFooterMenu('impacto-social')"
+            >
+              <h3>Impacto Social</h3>
+              <i class="material-icons icon--expand-more">expand_more</i>
+              <i class="material-icons icon--expand-less">expand_less</i>
+            </div>
             <ul>
               <li><a href="#">Comunidade</a></li>
               <li><a href="#">Meio Ambiente</a></li>
@@ -209,7 +263,11 @@
             </ul>
           </div>
           <div class="starbucks-rewards">
-            <h3>Starbucks Rewards</h3>
+            <div class="links--title" onclick="handleFooterMenu('starbucks-rewards')">
+              <h3>Starbucks Rewards</h3>
+              <i class="material-icons icon--expand-more">expand_more</i>
+              <i class="material-icons icon--expand-less">expand_less</i>
+            </div>
             <ul>
               <li><a href="#">Baixe o aplicativo</a></li>
               <li><a href="#">Termos & Condições do Starbucks Card</a></li>
@@ -246,5 +304,6 @@
       </div>
     </footer>
     <script src="../src/js/slider.js"></script>
+    <script src="../src/js/menu-phone.js"></script>
   </body>
 </html>

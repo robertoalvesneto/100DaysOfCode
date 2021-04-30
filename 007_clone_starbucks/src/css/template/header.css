@@ -20,9 +20,7 @@ header {
 .header-left__nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 400px;
-  margin-left: 1.2vw;
+  margin-left: 2vw;
 }
 
 .header-left__nav a {
@@ -30,6 +28,7 @@ header {
   font-size: 0.9rem;
   color: black;
   font-weight: bold;
+  margin-right: 2vw;
 }
 
 .header-left__nav a:hover {
@@ -37,9 +36,14 @@ header {
 }
 
 /*  ## header-right  */
-.header-right {
+.header-right,
+.header-right__content {
   display: flex;
-  margin-right: 2.3vw;
+  margin-right: 1vw;
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .historias-logo {
@@ -49,9 +53,7 @@ header {
 .header-right__menu {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   font-size: 1rem;
-  width: 500px;
   margin-left: 1.2vw;
 }
 
@@ -68,6 +70,8 @@ header {
 .header-right__menu .align-center {
   display: flex;
   align-items: center;
+
+  margin-right: 1vw;
 }
 
 .header-right__menu .tam-button-login {
@@ -82,10 +86,11 @@ header {
   border: 1px solid black;
   border-radius: 30px;
   transition: font-size 0.25s;
+  text-align: center;
 }
 
 .header-right__menu .button-login:hover {
-  font-size: 0.8em;
+  font-size: 0.6em;
   background-color: var(--cinza);
 }
 
@@ -103,8 +108,169 @@ header {
   border-radius: 30px;
   transition: font-size 0.25s;
   color: white;
+  text-align: center;
 }
 
 .header-right__menu .button-create-account:hover {
-  font-size: 0.8em;
+  font-size: 0.6em;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .tam-create-account,
+  .button-create-account {
+    display: none !important;
+  }
+
+  .header-left__nav a {
+    font-size: 0.7rem;
+    margin-right: 1vw;
+  }
+}
+
+@media (max-width: 930px) {
+  .tam-button-login,
+  .button-login {
+    display: none !important;
+  }
+}
+
+@media (max-width: 830px) {
+  .header-right__menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  header {
+    height: 70px;
+  }
+
+  .header-left__nav {
+    display: none !important;
+  }
+
+  .header-right__content {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    display: block !important;
+  }
+
+  .tam-create-account,
+  .button-create-account,
+  .historias-logo,
+  .tam-button-login,
+  .button-login,
+  .header-right__menu {
+    display: block !important;
+  }
+
+  .starbucks-logo {
+    width: 40px;
+  }
+
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20px;
+    height: 20px;
+    margin-right: 7vw;
+  }
+
+  /* MOBILE NAV MENU*/
+  .mobile-nav__content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 55vw;
+    padding: 2vh 0;
+    background-color: white;
+    transform: translateX(-55vw);
+  }
+
+  .mobile-nav--open .mobile-nav__content {
+    transform: translateX(0);
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-nav__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav__links a {
+    padding: 2.5vh 4vw;
+  }
+
+  .mobile-nav__links a:hover {
+    background-color: var(--cinza);
+  }
+
+  .divider {
+    height: 0.1px;
+    background-color: var(--preto-cinza);
+  }
+
+  .tam-button-login,
+  .tam-create-account,
+  .align-center {
+    margin-bottom: 2vh;
+  }
+
+  .tam-historias-logo {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+
+  .tam-historias-logo,
+  .tam-button-login,
+  .tam-create-account {
+    width: 90% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-login,
+  .button-create-account {
+    padding: 1vh 5vw !important;
+    transition: padding 0.25s !important;
+    transition: margin 0.25s !important;
+    transition: font-size 0.25 !important;
+  }
+  
+  .tam-create-account:hover .button-create-account,
+  .tam-button-login:hover .button-login {
+    font-size: 0.8em !important;
+    margin: 0 10px !important;
+  }
+
+  .nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .mobile-nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
 }

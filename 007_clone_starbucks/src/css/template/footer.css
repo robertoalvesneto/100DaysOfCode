@@ -49,6 +49,10 @@ footer {
   color: var(--preto-cinza);
 }
 
+.icon--expand-more,
+.icon--expand-less {
+  display: none;
+}
 
 /* ##line */
 .footer-container__line {
@@ -116,7 +120,7 @@ footer {
   }
 }
 
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 800px) {
   footer {
     display: block;
   }
@@ -137,5 +141,44 @@ footer {
 
   .footer-container__normas .bar {
     display: none;
+  }
+
+  .footer-container__links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-container__links ul {
+    display: none !important;
+  }
+
+  .footer-container__links__open ul {
+    display: block !important;
+  }
+
+  .footer-container__links ul li a {
+    font-weight: 400;
+  }
+
+  .footer-container__links ul li:hover a {
+    font-weight: bold;
+  }
+
+  .sobre-nos,
+  .carreira,
+  .impacto-social,
+  .starbucks-rewards {
+    margin-bottom: 4vh;
+    margin-left: 4vw;
+    width: 100% !important;
+  }
+
+  .links--title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon--expand-more {
+    display: block;
   }
 }
